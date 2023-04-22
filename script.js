@@ -68,24 +68,25 @@ var filterBtn = document.getElementById("btn-filter");
 
 filterBtn.addEventListener("click",function(){
     var selectValue =document.getElementById('select-dropdown').value;
-
+    if(selectValue.toLowerCase()=='all'){
+        alert("select a profession before clicking the button");
+        return;
+        // newtr.innerHTML=` 
+        // <div>${value.id}.</div>
+        // <div>Name : ${value.name}  </div>
+        // <div>Profession: ${value.profession} </div>
+        // <div>Age:${value.age}</div>`;
+        // table.innerHTML=newtr;
+    }
     console.log(table.innerHTML="");
 
     var filtered = emp.filter(function(value){
-            
+
         var newtr = document.createElement("div");
             newtr.className="table-row";
         
-        if(selectValue.toLowerCase()=='all'){
-            
-            newtr.innerHTML=` 
-            <div>${value.id}.</div>
-            <div>Name : ${value.name}  </div>
-            <div>Profession: ${value.profession} </div>
-            <div>Age:${value.age}</div>`;
-            table.innerHTML=newtr;
-        }
-        else if(value.profession==selectValue.toLowerCase()){
+        
+         if(value.profession==selectValue.toLowerCase()){
              
                 newtr.innerHTML=` 
                 <div>${value.id}.</div>
