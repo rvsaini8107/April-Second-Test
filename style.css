@@ -1,0 +1,94 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'); */
+:root{
+    --bck:#000;
+    --wte:#fff;
+
+}
+
+*{
+    color:var(--wte);
+    background-color: var(--bck);
+    /* font-family: 'Inter', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:var(--wte);
+    background-color: var(--bck);
+}
+    .container {
+        margin: 5% 15%;
+    }
+  .heading {
+    margin: 3% 0;
+  }
+
+  #select-dropdown {
+    padding: 4px 1%;
+  }
+  .profession-list-div {
+    margin: 3% 0;
+    width: 50%;
+  }
+  #table-row-1 {
+    border: 1px solid;
+  }
+
+  #btn-filter {
+    border-radius: 0px !important;
+    width: 15%;
+  }
+  #btn-add {
+    border-radius: 0px !important;
+    width: 15%;
+  }
+  .div-last-add {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10% 0;
+  }
+  
+  .name-label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filed-2{
+    margin: 0 4%;
+  }
+ 
+  input {
+    border-radius: 5px;
+    padding: 2%;
+    border: 1px solid;
+    outline: none;
+  }
+  .dropdown-toggle {
+    padding: 3px 2%;
+  }
+  tr {
+    border-radius: 15px;
+  }
+
+  .table-row {
+    border: 1px solid;
+  }
+  .row {
+    border: 1px solid;
+    margin-bottom: 1%;
+  }
+ .table-row {
+    border: 1px solid;
+    display: flex;
+    gap: 10%;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    padding: 1%;
+  }
+  
+  .div-form {
+    display: flex;
+    margin-bottom: 3%;
+  }
